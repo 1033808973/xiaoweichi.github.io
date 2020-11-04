@@ -45,6 +45,7 @@ Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer D
 •	Deep Neural Network without Batch Normalization (BN)
 
 -	Applied Tensorflow to reproduce FixupNet and obtained the identical results as the original paper with ImageNet data set.
+
 ### Step Two:
 ■	**Model Fusion based on 8-bit and without BN**
 
@@ -106,6 +107,7 @@ Research on Image Recognition of Coal and Gangue based on Convolution Neural Net
 -	Divided each original image into n*n small images to recognize the texture of coal and gangue independently due to the abnormal mineral morphology. And adjusted parameters to find the appropriate value n (the best state n is 5)
 
 -	At the same time, the above method expands the original data set to more than 9w, and makes the model pay more attention to the texture difference of the two stones to reduce the interference of external factors.
+
 ### Step Three:
 
 ■	**Result**
@@ -137,6 +139,7 @@ Exploration of the Parameter Identification and Compliance Control of Linear Mot
 •	Mechanical transmission module
 
 -	Changed the speed of the motor to the speed of the screw through the reducer and changed the rotation motion to the linear movement of the slider by the nut pair.
+
 ### Step Three:
 ■	**Parameter Identification**
 
