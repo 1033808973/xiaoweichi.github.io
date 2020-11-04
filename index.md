@@ -5,7 +5,7 @@
       <p><b>mail：xiaoweichi@bupt.edu.cn</b></p>
     </td>
     <td width="25%">
-      <img src="/IMG_20201015_102306.jpg" width="100%">      % 插入证件照代码
+      <img src="/IMG_20201015_102306.jpg" width="100%">
     </td>
   </tr>
 </table>
