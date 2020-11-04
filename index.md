@@ -16,7 +16,7 @@ Major GPA: 4.00/4.00
 
 ■	Software Operation
 
-•	  Python, C, Java, MATLAB, PyTorch, TensorFlow
+-	  Python, C, Java, MATLAB, PyTorch, TensorFlow
 
 # RESEARCH EXPERIENCES
 ## Part-time Research Assistant                                                                                                     07/2019 –11/2020                                                                                                                                                                                                                                                                                                                                                                                                                                                            
@@ -26,11 +26,11 @@ Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer D
 ### Step One:
 ■	Reproduction and Exploration of Thesis
 
-•	8-bit Quantization
+-	8-bit Quantization
 
--	Referred to the paper's method and trained the ResNet network with ImageNet data set in the 8-bit data stream.
+--	Referred to the paper's method and trained the ResNet network with ImageNet data set in the 8-bit data stream.
 
--	Utilized direct Quantization, constant Quantization, shift Quantization and other quantitative methods to quantize the data from 32-bit to 8-bit based on WAGEUBN, and observed the impact of the data stream.
+--	Utilized direct Quantization, constant Quantization, shift Quantization and other quantitative methods to quantize the data from 32-bit to 8-bit based on WAGEUBN, and observed the impact of the data stream.
 
 •	Deep Neural Network without Batch Normalization (BN)
 
