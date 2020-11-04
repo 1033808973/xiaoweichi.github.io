@@ -3,10 +3,10 @@
     <td width="75%">
       <h1>Xiaowei Chi</h1>
       <p><b>mail：xiaoweichi@bupt.edu.cn</b></p>
-      <a href="#Education">Education</a>
-      <a href="#COURSEWORK & SKILLS">COURSEWORK & SKILLS</a>
-      <a href="#RESEARCH EXPERIENCES">RESEARCH EXPERIENCES</a>
-      <a href="#Publications">Publications</a>
+      <p><a href="#Education">Education</a></p>
+      <p><a href="#COURSEWORK & SKILLS">COURSEWORK & SKILLS</a></p>
+      <p><a href="#RESEARCH EXPERIENCES">RESEARCH EXPERIENCES</a></p>
+      <p><a href="#Publications">Publications</a></p>
     </td>
     <td width="25%">
       <img src="/IMG_20201015_102306.jpg" width="100%">
@@ -23,6 +23,7 @@ Bachelor of Engineering, Internet of Things
 
 Major GPA: 4.00/4.00
 
+<a id="COURSEWORK & SKILLS"></a>
 # COURSEWORK & SKILLS
 ■	Curriculum Highlights
 
@@ -32,6 +33,7 @@ Major GPA: 4.00/4.00
 
 -	  Python, C, Java, MATLAB, PyTorch, TensorFlow
 
+<a id="RESEARCH EXPERIENCES"></a>
 # RESEARCH EXPERIENCES
 ## Part-time Research Assistant                                                                                                     07/2019 –11/2020                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 Supervisor: Guoqi Li
@@ -50,7 +52,6 @@ Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer D
 
 -	Applied Tensorflow to reproduce FixupNet and obtained the identical results as the original paper with ImageNet data set.
 
-<a href="#tips">访问”内部链接锚点位置“</a>
 ### Step Two:
 ■	**Model Fusion based on 8-bit and without BN**
 
@@ -160,6 +161,7 @@ Exploration of the Parameter Identification and Compliance Control of Linear Mot
 
 •	Placed the motor horizontally and set its sensor value to 1852 to avoid the influence of the end of the motor on gravity, and obtained the force of the system through the position of the motor.
 
+<a id="PUBLICATIONS"></a>
 # PUBLICATIONS	
-Yuting Xie, Xiaowei Chi, Haiyuan Li, Fuwen Wang. Coal and Gangue Recognition Method Based on Local Texture Classification Network. IEEE Robotics and Automation Letters (RA-L and ICRA). (under review)
+Yuting Xie, Xiaowei Chi, Haiyuan Li, Fuwen Wang. Coal and Gangue Recognition Method Based on Local Texture Classification Network. IEEE Robotics and Automation Letters (RA-L and ICRA option). (under review)
 
