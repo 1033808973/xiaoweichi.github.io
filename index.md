@@ -24,19 +24,19 @@ Supervisor: Guoqi Li
 
 Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer DNN Online Training
 ### Step One:
-■	Reproduction and Exploration of Thesis
+■	**Reproduction and Exploration of Thesis**
 
--	8-bit Quantization
+•	8-bit Quantization
 
---	Referred to the paper's method and trained the ResNet network with ImageNet data set in the 8-bit data stream.
+-	Referred to the paper's method and trained the ResNet network with ImageNet data set in the 8-bit data stream.
 
---	Utilized direct Quantization, constant Quantization, shift Quantization and other quantitative methods to quantize the data from 32-bit to 8-bit based on WAGEUBN, and observed the impact of the data stream.
+-	Utilized direct Quantization, constant Quantization, shift Quantization and other quantitative methods to quantize the data from 32-bit to 8-bit based on WAGEUBN, and observed the impact of the data stream.
 
 •	Deep Neural Network without Batch Normalization (BN)
 
 -	Applied Tensorflow to reproduce FixupNet and obtained the identical results as the original paper with ImageNet data set.
 ### Step Two:
-■	Model Fusion based on 8-bit and without BN
+■	**Model Fusion based on 8-bit and without BN
 
 •	Migrated all the quantitative methods mentioned above to FixupNet and screened the current quantitative methods by control variable method.
 
@@ -46,7 +46,7 @@ Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer D
 
 •	For the backward propagation, the scale error needed to utilize additional flag quantification method, and then tested the model to get the training method with the least impact on accuracy. 
 ### Step Three:
-■	Feasibility Verification and Analysis
+■	**Feasibility Verification and Analysis
 
 •	Analyzed the L2 normal form of gradient updating to find the network reaches block dynamic isometry (BDI) when the average trace of the Jacobian matrix of each block approaches to 1.
 
@@ -54,13 +54,13 @@ Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer D
 
 •	For the shortcomings of BN in small batch size, and the network without BN can be trained in small batch size for theoretical proof. And utilized ResNet-110 to verify the above content. 
 ### Step Four:
-■	Result
+■	**Result
 
 •	Compared with ResNet-34 and ResNet-50, the accuracy of 8bit-Fixup34 and 8bit-Fixup50 models is only 1.69% and 3.46% lower than the former.
 
 •	For ResNet-110 network models with different batch (1, 2, 4, 8,128), the accuracy of the model with BN is 22.74%, 85.05%, 88.41%, 90.36% and 92.84%, respectively, while without BN is 89.41%, 92.74%, 93.11%, 93.13% and 92.98%.
 
-■	Conclusions
+■	**Conclusions
 
 •	Batch Normalization can be replaced by appropriate initialization in the large DNN such as ResNet-110 and ResNet-101 to reduce the complex operations during the forward and backward propagation of BN. And provide a possibility to reduce the memory cost (training a DNN without large batch size).
 
@@ -73,7 +73,7 @@ Supervisor: Haiyuan Li
 
 Research on Image Recognition of Coal and Gangue based on Convolution Neural Network (CNN) 
 ### Step One:
-■	Data Acquisition and Problem Analysis
+■	**Data Acquisition and Problem Analysis
 
 •	Collected original photos of coal and gangue under the same lighting and brightness environment and obtained more than 1,000 photos of each category. 
 
@@ -81,7 +81,7 @@ Research on Image Recognition of Coal and Gangue based on Convolution Neural Net
 
 •	Applied image analysis methods to conduct mathematical analysis on the grey value, grey entropy, inverse moment, correlation and energy and other parameters to verify the correctness of the above results.
 ### Step Two:
-■	Model Establishment and Optimization: LCT-Net(Vision-Based Coal and Gangue Recognition Model)
+■	**Model Establishment and Optimization: LCT-Net(Vision-Based Coal and Gangue Recognition Model)
 
 •	Data Processing and Model Establishment
 
@@ -98,7 +98,7 @@ Research on Image Recognition of Coal and Gangue based on Convolution Neural Net
 -	At the same time, the above method expands the original data set to more than 9w, and makes the model pay more attention to the texture difference of the two stones to reduce the interference of external factors.
 ### Step Three:
 
-■	Result
+■	**Result
 
 •	On different data sets, the accuracy, recall rate of coal, and recall rate of gangue obtained by LCT-Net are all higher than existing models and methods.
 
@@ -109,13 +109,13 @@ Supervisor: Haiyuan Li
 
 Exploration of the Parameter Identification and Compliance Control of Linear Motor
 ### Step One:
-■	Data Interaction of Motor
+■	**Data Interaction of Motor
 
 •	Utilized the serial port tools of MATLAB and Simulink to realize the UART communication with the motor and set up the data transmission format (the command frame is a 2B frame header, the length, motor number, command type and control table index are all 1B, the NB data segment, the checksum is 1B).
 
 •	Visualized the received position, voltage, pressure and other parameters through MATLAB to facilitate subsequent observation.
 ### Step Two:
-■	Unit Model Establishment (1 degree of freedom linear)
+■	**Unit Model Establishment (1 degree of freedom linear)
 
 •	Motor Module
 
@@ -128,7 +128,7 @@ Exploration of the Parameter Identification and Compliance Control of Linear Mot
 
 -	Changed the speed of the motor to the speed of the screw through the reducer and changed the rotation motion to the linear movement of the slider by the nut pair.
 ### Step Three:
-■	Parameter Identification
+■	**Parameter Identification
 
 •	Through Hillhoff's law and Laplace's equation, and for the voltage, current and linear speed parameters among them, curve fitting is performed to determine the back electromotive force constant and resistance.
 
@@ -136,7 +136,7 @@ Exploration of the Parameter Identification and Compliance Control of Linear Mot
 
 •	Obtained moment of inertia by fitting the values corresponding to the current and the motor position and combining with the ratio of the acceleration record and the angular acceleration.
 ### Step Four:
-■	Compliant Control
+■	**Compliant Control
 
 •	Utilized Simulink slide rail to control the movement of the motor and Adjusted the three parameters of inertia, damping and stiffness to change the impedance effect.
 
