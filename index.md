@@ -56,6 +56,7 @@ Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer D
 •	Compared with ResNet-34 and ResNet-50, the accuracy of 8bit-Fixup34 and 8bit-Fixup50 models is only 1.69% and 3.46% lower than the former.
 
 •	For ResNet-110 network models with different batch (1, 2, 4, 8,128), the accuracy of the model with BN is 22.74%, 85.05%, 88.41%, 90.36% and 92.84%, respectively, while without BN is 89.41%, 92.74%, 93.11%, 93.13% and 92.98%.
+
 ■	Conclusions
 
 •	Batch Normalization can be replaced by appropriate initialization in the large DNN such as ResNet-110 and ResNet-101 to reduce the complex operations during the forward and backward propagation of BN. And provide a possibility to reduce the memory cost (training a DNN without large batch size).
