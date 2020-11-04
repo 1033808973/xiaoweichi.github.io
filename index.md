@@ -3,6 +3,7 @@
     <td width="75%">
       <h1>Xiaowei Chi</h1>
       <p><b>mail：xiaoweichi@bupt.edu.cn</b></p>
+      <a id="tips">内部链接锚点位置</a>
     </td>
     <td width="25%">
       <img src="/IMG_20201015_102306.jpg" width="100%">
@@ -46,6 +47,7 @@ Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer D
 
 -	Applied Tensorflow to reproduce FixupNet and obtained the identical results as the original paper with ImageNet data set.
 
+<a href="#tips">访问”内部链接锚点位置“</a>
 ### Step Two:
 ■	**Model Fusion based on 8-bit and without BN**
 
