@@ -3,7 +3,10 @@
     <td width="75%">
       <h1>Xiaowei Chi</h1>
       <p><b>mail：xiaoweichi@bupt.edu.cn</b></p>
-      <a id="tips">内部链接锚点位置</a>
+      <a href="#Education">Education</a>
+      <a href="#COURSEWORK & SKILLS">COURSEWORK & SKILLS</a>
+      <a href="#RESEARCH EXPERIENCES">RESEARCH EXPERIENCES</a>
+      <a href="#Publications">Publications</a>
     </td>
     <td width="25%">
       <img src="/IMG_20201015_102306.jpg" width="100%">
@@ -11,7 +14,7 @@
   </tr>
 </table>
 
-
+<a id="Education"></a>
 # EDUCATIONS
 ■	Educations
 Beijing University of Posts and Telecommunications, Beijing, China			         09/2017-present
