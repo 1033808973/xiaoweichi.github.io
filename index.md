@@ -89,6 +89,7 @@ Exploration of the Parameter Identification and Compliance Control of Linear Mot
 	Compliant Control
 •	Utilized Simulink slide rail to control the movement of the motor and Adjusted the three parameters of inertia, damping and stiffness to change the impedance effect.
 •	Placed the motor horizontally and set its sensor value to 1852 to avoid the influence of the end of the motor on gravity, and obtained the force of the system through the position of the motor.
+
 ###PUBLICATIONS	
 Yuting Xie, Xiaowei Chi, Haiyuan Li, Fuwen Wang. Coal and Gangue Recognition Method Based on Local Texture Classification Network. IEEE Robotics and Automation Letters (RA-L and ICRA). (under review)
 
