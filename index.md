@@ -8,9 +8,9 @@
       <p><a href="#RESEARCH EXPERIENCES">RESEARCH EXPERIENCES</a></p>
       <p><a href="#Publications">Publications</a></p>
     </td>
-    <td width="25%">
+<!--     <td width="25%">
       <img src="/IMG_20201015_102306.jpg" width="100%">
-    </td>
+    </td> -->
   </tr>
 </table>
 
