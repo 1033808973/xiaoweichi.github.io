@@ -4,7 +4,10 @@ Xiaowei Chi
 # EDUCATIONS
 ■	Educations
 Beijing University of Posts and Telecommunications, Beijing, China			         09/2017-present
-Bachelor of Engineering, Internet of Things 	           		 	         	                        Major GPA: 4.00/4.00
+
+Bachelor of Engineering, Internet of Things
+
+Major GPA: 4.00/4.00
 
 # COURSEWORK & SKILLS
 ■	Curriculum Highlights
