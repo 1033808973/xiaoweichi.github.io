@@ -1,4 +1,14 @@
-Xiaowei Chi
+<table border="0">
+  <tr>
+    <td width="75%">
+      <h1>Xiaowei Chi</h1>
+      <p><b>mail：xiaoweichi@bupt.edu.cn</b></p>
+    </td>
+    <td width="25%">
+      <img src="/IMG_20201015_102306.jpg" width="100%">      % 插入证件照代码
+    </td>
+  </tr>
+</table>
 
 
 # EDUCATIONS
