@@ -1,7 +1,7 @@
 <table border="0">
   <tr>
     <td width="75%">
-      <img src="/photo1.jpg" width="100%">
+<!--       <img src="/photo1.jpg" width="100%"> -->
       <h1>Xiaowei Chi</h1>
       <p><b>mail：xiaoweichi@bupt.edu.cn</b></p>
       <p><a href="#Education">Education</a></p>
