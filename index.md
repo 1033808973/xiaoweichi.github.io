@@ -9,6 +9,7 @@
       <p><a href="#Publications">Publications</a></p>
     </td>
     <td width="25%">
+      <h1></h1>
       <img src="/photo1.jpg" width="100%">
     </td>
   </tr>
