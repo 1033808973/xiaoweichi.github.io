@@ -3,10 +3,10 @@
     <td width="75%">
       <h1>Xiaowei Chi</h1>
       <p><b>mail：xiaoweichi@bupt.edu.cn</b></p>
-      <p><b href="#Education">Education</b></p>
-      <p><b href="#COURSEWORK & SKILLS">COURSEWORK & SKILLS</b></p>
-      <p><b href="#RESEARCH EXPERIENCES">RESEARCH EXPERIENCES</b></p>
-      <p><b href="#Publications">Publications</b></p>
+      <p><a href="#Education">Education</a></p>
+      <p><a href="#COURSEWORK & SKILLS">COURSEWORK & SKILLS</a></p>
+      <p><a href="#RESEARCH EXPERIENCES">RESEARCH EXPERIENCES</a></p>
+      <p><a href="#Publications">Publications</a></p>
     </td>
     <td width="25%">
       <img src="/photo1.jpg" width="100%">
