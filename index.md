@@ -23,7 +23,7 @@ Beijing University of Posts and Telecommunications, Beijing, China			         09
 
 Bachelor of Engineering, Internet of Things
 
-Major GPA: 4.00/4.00
+Major GPA: 3.88/4.00
 
 <a id="COURSEWORK & SKILLS"></a>
 # COURSEWORK & SKILLS
