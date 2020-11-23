@@ -59,40 +59,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="education">
 			 <h3 class="clr3" id="ire">Project Detail page</h3>
 			 <div class="education_details">
-				 <h4>An Autonomous Planning Robot Grasping System face for coal and coal gangue sorting<span>09/2019 – 09/2020</span></h4>
+				 <h4>Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer DNN Online Training<span>07/2019 – 11/2020</span></h4>
 				 <h6>Part-time Research Assistant</h6>
 				 <h6>Supervisor: Haiyuan Li</h6>
-                 <li>In this project, I am the team leader and mainly focus on the classification problem of coal and gangue based on computer vision.</li>
-                 <li>I am also the first writer of the paper for this work which is under review as a Submission for RA-L and ICRA for the IEEE Robotics and Automation Letters(RA-L). </li>	 				
-                 <a href="javascript:void(0);" onclick="viewpdf('Coalpaper')">Read paper</a>
-                 <br><li>While advertising the sorting factory of coal and gangue, we found that the sorting is still done by human hands. However, the working environment has unavoidable dust and pollution which will damage the workers' health. So the sorting system is in need. As we know, the coal and gangue are already broken into pieces and transported by a conveyor belt. Our work is based on this conveyor belt, designed physical separation devices to sort these two types of rocks.</li>
-                 <br><img src="images/coal/process.jpg"/>
-                 <li>We build a simulation scene by using a robot hand as this sorting device. This hand is run by 4 motors and has two fingures. We choose small pieces of rocks for demonstrations. </li>
-                 <!-- <br><img src="images/coal/hand.jpg"/> -->
-                 <li>Click the following picture to play the demonstration video.</li>
-                 <video id="video" width="640" height="360" src="images/coal/flowline.mp4" autobuffer onclick="play()"> 
-                    <div class="fallback"> <p>You must have an HTML5 capable browser.</p> </div> 
-                  </video>
-                  <script type="text/javascript">
-                    function play() {
-                      var video = document.getElementById("video");
-                      video.play();
-                    }  
-                  </script>
-                 <li>Affected by the Corona Virus, we can not go to the factory to research for a more efficient and suitable system. This work will be implemented by the successors. So we pay our attention to the classification problem of coal and gangue.</li>
-                 <li>We have built a big dataset which contains many different scenes that might happen in the industry. The following picture shows several situations, including overlap, shadow (which has a strong effect on the reconition of coal and gangue), rubber track background, black background, strong point light, clutters and dust. </li>
-                 <br><img src="images/coal/data.jpg"/>
-                 <li>Inspired by the face recognition algorithm like MTCNN, we designed a two layer network. The first net is small and shallow, which can classify the clutters and rocks. Here is its result.</li>
-                 <br><img src="images/coal/classified1.jpg"/>  <!-- dataset -->
-                 <li>The second network is much more complex, which can classify coal and gangue. In our research, we examined several baseline methods and found that the accuracy of classification of these rocks is strongly affected by light conditions. Even though there are some algorithms like gray entropy that can analyse its texture, these algorithms will still be affected by the resolution ratio and dust.</li>
-                 <li>Before we research the new methods, we first build several different datasets. As we showed below, we collect new data under different light strength, different light colors, and different resolutions.</li>
-                 <br><img src="images/coal/classified3.jpg"/>  <!-- dataset -->
-                 <li>We came up with new methods to solve this problem which is also inspired by human face recognition algorithms. The human face algorithm focuses on several important parts in human face like iris and mouth. However, the rocks also have its characters, which are its texture. To identify these repeat characters, we divided a picture of coal and gangue into several smaller pieces and classified these smaller pictures through a well designed convolution network individually.</li>
-                 <br><img src="images/coal/classified2.jpg"/>  <!-- The flow chart -->
-                 
-                 <li>The method we proposed has accuracy of 89.2% in total four dataset. You can read more detail data comparasion of our mathods and baseline methods in the paper.</li>
-                 
-				 <p class="cmpny1"></p>
+          <h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step One:</b></h5>
+          <br><b>◼ Data Interaction of Motor</b>
+          <br>&ensp;• Utilized the serial port tools of MATLAB and Simulink to realize the UART communication with the motor and set up the data transmission format (the command frame is a 2B frame header, the length, motor number,
+          command type and control table index are all 1B, the NB data segment, the checksum is 1B).
+          <br>&ensp;• Visualized the received position, voltage, pressure and other parameters through MATLAB to facilitate subsequent observation.
+          <h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step Two:</b></h5>
+          <br><b>◼ Unit Model Establishment (1 degree of freedom linear)</b>
+          <br>&ensp;• Motor Module
+          <br>&emsp;➢ The First Part: Converted the voltage into current based on Hillhoff's Law and Laplace transform.
+          <br>&emsp;➢ The Second Part: Obtained the torque by multiplying the current and the torque constant
+          <br>&emsp;➢ The Third Part: Obtained the rotational speed with the torque balance equation of the drive shaft.
+          <br>&ensp;• Mechanical transmission module
+          <br>&emsp;➢ Changed the speed of the motor to the speed of the screw through the reducer and changed the rotation motion to the linear movement of the slider by the nut pair.
+          <h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step Three:</b></h5>
+          <br><b>◼ Parameter Identification</b>
+          <br>&ensp;• Through Hillhoff's law and Laplace's equation, and for the voltage, current and linear speed parameters among them, curve fitting is performed to determine the back electromotive force constant and resistance.
+          <br>&ensp;• By applying a stable voltage value, the linear speed at the end of the motor is obtained, and the screw and reducer are combined to obtain the torque constant and equivalent damping coefficient.
+          <br>&ensp;• Obtained moment of inertia by fitting the values corresponding to the current and the motor position and combining with the ratio of the acceleration record and the angular acceleration.
+          <h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step Four:</b></h5>
+          <br><b>◼ Compliant Control</b>
+          <br>&ensp;• Utilized Simulink slide rail to control the movement of the motor and Adjusted the three parameters of inertia, damping and stiffness to change the impedance effect.
+          <br>&ensp;• Placed the motor horizontally and set its sensor value to 1852 to avoid the influence of the end of the motor on gravity, and obtained the force of the system through the position of the motor
+          <p class="cmpny1"></p>
 
 
 			 </div>

@@ -59,39 +59,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="education">
 			 <h3 class="clr3" id="ire">Project Detail page</h3>
 			 <div class="education_details">
-				 <h4>An Autonomous Planning Robot Grasping System face for coal and coal gangue sorting<span>09/2019 – 09/2020</span></h4>
+				 <h4>Investigation on Removing Batch Normalization for Efficient Full 8-bit Integer DNN Online Training<span>07/2019 – 11/2020</span></h4>
 				 <h6>Part-time Research Assistant</h6>
-				 <h6>Supervisor: Haiyuan Li</h6>
-                 <li>In this project, I am the team leader and mainly focus on the classification problem of coal and gangue based on computer vision.</li>
-                 <li>I am also the first writer of the paper for this work which is under review as a Submission for RA-L and ICRA for the IEEE Robotics and Automation Letters(RA-L). </li>	 				
-                 <a href="javascript:void(0);" onclick="viewpdf('Coalpaper')">Read paper</a>
-                 <br><li>While advertising the sorting factory of coal and gangue, we found that the sorting is still done by human hands. However, the working environment has unavoidable dust and pollution which will damage the workers' health. So the sorting system is in need. As we know, the coal and gangue are already broken into pieces and transported by a conveyor belt. Our work is based on this conveyor belt, designed physical separation devices to sort these two types of rocks.</li>
-                 <br><img src="images/coal/process.jpg"/>
-                 <li>We build a simulation scene by using a robot hand as this sorting device. This hand is run by 4 motors and has two fingures. We choose small pieces of rocks for demonstrations. </li>
-                 <!-- <br><img src="images/coal/hand.jpg"/> -->
-                 <li>Click the following picture to play the demonstration video.</li>
-                 <video id="video" width="640" height="360" src="images/coal/flowline.mp4" autobuffer onclick="play()"> 
-                    <div class="fallback"> <p>You must have an HTML5 capable browser.</p> </div> 
-                  </video>
-                  <script type="text/javascript">
-                    function play() {
-                      var video = document.getElementById("video");
-                      video.play();
-                    }  
-                  </script>
-                 <li>Affected by the Corona Virus, we can not go to the factory to research for a more efficient and suitable system. This work will be implemented by the successors. So we pay our attention to the classification problem of coal and gangue.</li>
-                 <li>We have built a big dataset which contains many different scenes that might happen in the industry. The following picture shows several situations, including overlap, shadow (which has a strong effect on the reconition of coal and gangue), rubber track background, black background, strong point light, clutters and dust. </li>
-                 <br><img src="images/coal/data.jpg"/>
-                 <li>Inspired by the face recognition algorithm like MTCNN, we designed a two layer network. The first net is small and shallow, which can classify the clutters and rocks. Here is its result.</li>
-                 <br><img src="images/coal/classified1.jpg"/>  <!-- dataset -->
-                 <li>The second network is much more complex, which can classify coal and gangue. In our research, we examined several baseline methods and found that the accuracy of classification of these rocks is strongly affected by light conditions. Even though there are some algorithms like gray entropy that can analyse its texture, these algorithms will still be affected by the resolution ratio and dust.</li>
-                 <li>Before we research the new methods, we first build several different datasets. As we showed below, we collect new data under different light strength, different light colors, and different resolutions.</li>
-                 <br><img src="images/coal/classified3.jpg"/>  <!-- dataset -->
-                 <li>We came up with new methods to solve this problem which is also inspired by human face recognition algorithms. The human face algorithm focuses on several important parts in human face like iris and mouth. However, the rocks also have its characters, which are its texture. To identify these repeat characters, we divided a picture of coal and gangue into several smaller pieces and classified these smaller pictures through a well designed convolution network individually.</li>
-                 <br><img src="images/coal/classified2.jpg"/>  <!-- The flow chart -->
-                 
-                 <li>The method we proposed has accuracy of 89.2% in total four dataset. You can read more detail data comparasion of our mathods and baseline methods in the paper.</li>
-                 
+				 <h6>Supervisor: Guoqi Li</h6>
+          <h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step One:</b></h5>
+          <br><b>◼ Reproduction and Exploration of Thesis</b>
+          <br>&ensp;• 8-bit Quantization
+          <br>&emsp; ➢ Referred to the paper's method and trained the ResNet network with ImageNet data set in the 8-bit data stream.
+          <br>&emsp; ➢ Utilized direct Quantization, constant Quantization, shift Quantization and other quantitative methods to quantize the data from 32-bit to 8-bit based on WAGEUBN, and observed the impact of the data stream.
+          <br>&ensp;• Deep Neural Network without Batch Normalization (BN)
+          <br>&emsp; ➢ Applied Tensorflow to reproduce FixupNet and obtained the identical results as the original paper with ImageNet data set.
+          <br><h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step Two:</b></h5>
+          <br><b>◼ Model Fusion based on 8-bit and without BN</b>
+          <br>&ensp;• Migrated all the quantitative methods mentioned above to FixupNet and screened the current quantitative methods by control variable method.
+          <br>&ensp;• Utilized quantization methods based on WAGEUBN to quantize the parameters in FixupNet, it is found that the accuracy of 8-bit DNN without BN has little influence.
+          <br>&ensp;• Quantified the whole forward propagation and backward propagation to 8-bit respectively.
+          <br>&ensp;• For the backward propagation, the scale error needed to utilize additional flag quantification method, and then tested the model to get the training method with the least impact on accuracy.
+          <br><h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step Three:</b></h5>
+          <br><b>◼ Feasibility Verification and Analysis</b>
+          <br>&ensp;• Analyzed the L2 normal form of gradient updating to find the network reaches block dynamic isometry (BDI) when the average trace of the Jacobian matrix of each block approaches to 1.
+          <br>&ensp;• Analyzed the ResNet with BN and FixupNet without BN with mathematical theory, and they both reached BDI.
+          <br>&ensp;• For the shortcomings of BN in small batch size, and the network without BN can be trained in small batch size for theoretical proof. And utilized ResNet-110 to verify the above content.
+          <br><h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step Four:</b></h5>
+          <br><b>◼ Result</b>
+          <br>&ensp;• Compared with ResNet-34 and ResNet-50, the accuracy of 8bit-Fixup34 and 8bit-Fixup50 models is only 1.69% and 3.46% lower than the former.
+          <br>&ensp;• For ResNet-110 network models with different batch (1, 2, 4, 8,128), the accuracy of the model with BN is 22.74%, 85.05%, 88.41%, 90.36% and 92.84%, respectively, while without BN is 89.41%, 92.74%, 93.11%, 93.13% and 92.98%.
+          <br><b>◼ Conclusions</b>
+          <br>&ensp;• Batch Normalization can be replaced by appropriate initialization in the large DNN such as ResNet-110 and ResNet-101 to reduce the complex operations during the forward and backward propagation of BN. And provide a possibility to reduce the memory cost (training a DNN without large batch size).
+          <br>&ensp;• The 8bit neural network training in the case of small batch size is realized, and the accuracy loss is almost 0. And the memory required for training is reduced by more than ten times.
+          <br>&ensp;• A quantization method for networks without BN is proposed. Compared with the previous work using BN, this method can still maintain a very high accuracy while ensuring a small loss of accuracy. Even when without BN, training in small batches can be achieved without affecting accuracy
 				 <p class="cmpny1"></p>
 
 
