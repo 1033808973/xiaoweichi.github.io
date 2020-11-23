@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Curriculum Vitae a Personal Category Flat Bootstarp Responsive Website Template | Home :: w3layouts</title>
-<link href="/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<title>Xiaowei Chi Academy</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
- <link href="/css/dashboard.css" rel="stylesheet">
-<link href="/css/style.css" rel='stylesheet' type='text/css' />
+ <link href="css/dashboard.css" rel="stylesheet">
+<link href="css/style.css" rel='stylesheet' type='text/css' />
 
 <!-- Custom Theme files -->
 <!--//theme-style-->
@@ -22,6 +22,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   
 </head>
 <body>
+	
+<div class="details_header col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 ">
+	<ul>
+		<li><a href="aboutMe.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>About Me</a></li>
+		<li><a href="index.html"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>My Academy</a></li> 
+		<li><a href="javascript:void(0);" onclick="viewpdf('transcript')"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Transcript</a></li>
+		<li><a href="javascript:void(0);" onclick="viewpdf('XiaoweiChiCV')"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Print CV</a></li>
+		<li><a href="contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email me</a></li>
+		<li><a class="play-icon popup-with-zoom-anim" href="blogmain.html"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>blogs</a></li>
+	</ul>
+</div>
+
 <!-- header -->
 <div class="col-sm-3 col-md-2 sidebar">
 		 <div class="sidebar_top">
@@ -43,39 +55,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
 	<!---//pop-up-box---->			
 
-
 	
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	 <div class="content">
-		 <div class="details_header">
-			 <ul>
-				<li><a href="index.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>About Me</a></li>
-				<li><a href="index.html"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>My Academy</a></li> 
-				<li><a href="transcript.html"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Transcript</a></li>
-				 <li><a href="cv.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Print CV</a></li>
-				 <li><a href="contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email me</a></li>
-				 <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>View photo</a></li>
-				 <div id="small-dialog" class="mfp-hide">
-					 <img src="images/g4.jpg" alt=""/>
-				 </div>
-				 <script>
-						$(document).ready(function() {
-						$('.popup-with-zoom-anim').magnificPopup({
-							type: 'inline',
-							fixedContentPos: false,
-							fixedBgPos: true,
-							overflowY: 'auto',
-							closeBtnInside: true,
-							preloader: false,
-							midClick: true,
-							removalDelay: 300,
-							mainClass: 'my-mfp-zoom-in'
-						});
-																						
-						});
-				</script>
-			 </ul>
-		 </div>
 		 <div class="company">
 			 <h3 class="clr1" id="education">Educations</h3>
 			 <div class="company_details">
@@ -125,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <h6>Part-time Research Assistant</h6>
 				 <h6>Supervisor: Guoqi Li</h6>
 				<li>In this work, we proposed three quantization algorithms and built a framework which allows a ResNet without batch normalization to train by an extremely low batch size and 8-bit data flow, which can reduce the extensive computation of ResNet.</li>
-				<li>I am the first writer of the paper for this work which is just finished and expected to be released in December.</li>	 				
+				<li>I am the first writer of the paper for this work which is almost finished and expected to be released in December.</li>	 				
 				<a href="cv.html">...more details</a>
 				<p class="cmpny1"></p>
 			 </div>
@@ -136,7 +118,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <li>In this project, I am the team leader and mainly focus on the classification problem of coal and gangue based on computer vision.</li>
 				 <li>We propose a novel method based on deep learning to identify the repeat texture feature of coal and gangue and build a robust algorithm which has accuracy of 89.2%.</li>
 				 <li>I am the first writer of the paper for this work which is under review as a Submission for RA-L and ICRA for the IEEE Robotics and Automation Letters(RA-L). </li>	 				
-				 <a href="cv.html">...more details</a>
+				 <a href="coalDetail.html">...more details</a>
+				 <br><a href="coalDetail.html">read paper</a>
 				 <p class="cmpny1"></p>
 			 </div>
 			 <div class="education_details">
@@ -156,27 +139,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="education">
 			<h3 class="clr3" id="ore">Other Research Experience</h3>
 			<div class="education_details">
+				<h4>Animal Identification based on deep learning technology
+					<span>11/2020 – present </span></h4>
+					<h6>Project: Final Year Project</h6>
+					<h6>Supervisor: Zhaofeng He</h6>
+					<li>In this project, I will research and implement animal individual recognition based on deep learning techniques. Finally, I will design an iris or periocular recognition algorithm for the animal.</li>
+				<!-- <p class="cmpny1"></p> -->
+			</div>
+		 </div>
+			<div class="education_details">
 				<h4> web developer internship
-					<span>02/2020 – present </span></h4>
-				<h6>Part-time Research Assistant</h6>
-				<h6>Supervisor: Haiyuan Li</h6>
-				<li>Through equations like Hillhoff's law and Laplace's transform, and for the voltage, current and linear speed parameters among them, curve fitting is performed to determine the back electromotive force constant, resistance, and other parameters.</li>
+					<span>07/2018– 09/2018 </span></h4>
+					<h6>Company: Shanghai bull chase Internet finance company</h6>
+					<li>web developer</li>
 				<!-- <p class="cmpny1"></p> -->
 			</div>
 			<div class="education_details">
 				<h4>Wild life identification and protection system based on computer vision
-					<span>02/2020 – present </span></h4>
-				<h6>Part-time Research Assistant</h6>
-				<h6>Supervisor: Haiyuan Li</h6>
-				<li>Through equations like Hillhoff's law and Laplace's transform, and for the voltage, current and linear speed parameters among them, curve fitting is performed to determine the back electromotive force constant, resistance, and other parameters.</li>
+					<span>10/2018 – 03/2019 </span></h4>
+					<h6>Project: Innovation Project of University Students 2018</h6>
+					<li>Team leader and Identification Algorithm designer</li>
 				<!-- <p class="cmpny1"></p> -->
 			</div>
 			<div class="education_details">
 				<h4>A online time manager application based on time tabel for College students
-					<span>02/2020 – present </span></h4>
-				<h6>Part-time Research Assistant</h6>
-				<h6>Supervisor: Haiyuan Li</h6>
-				<li>Through equations like Hillhoff's law and Laplace's transform, and for the voltage, current and linear speed parameters among them, curve fitting is performed to determine the back electromotive force constant, resistance, and other parameters.</li>
+					<span>10/2017 – 03/2018 </span></h4>
+					<h6>Project: Innovation Project of University Students 2017</h6>
+					<li>Team leader and Full stack engineer</li>
 				<!-- <p class="cmpny1"></p> -->
 			</div>
 		 </div>
@@ -186,6 +175,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	 </div>
 </div>
+
+<script>
+    // js go to pdf page
+    function viewpdf(obj){
+    p1='<html><head><title>pdf</title></head><body style=\"height: 100%; width: 100%; overflow: hidden; margin:0px; background-color: rgb(51, 51, 51);\"><embed style=\"position:absolute; left: 0; top: 0;\" width=\"100%\" height=\"100%\"';
+    p2= 'src=\"pdf/'+obj+'.pdf\" type=\"application/pdf\"></body></html>';
+    w=window.open('about:blank');
+    w.document.write(p1+p2);
+    w.document.close();
+    // w.print(); 
+
+    }
+</script>
+
 <!---->
 </body>
 </html>

@@ -31,7 +31,8 @@ a:focus {
 }
 /*-- header_top --*/
 .sidebar{
-  background:#CDD6BC;
+  background:rgb(205, 214, 188);
+
   top: 0px;
   padding:2em 30px;
 }
@@ -46,7 +47,7 @@ a:focus {
 .sidebar img{
 	border:1px solid #fff;
 	padding:1em;
-	width:100%;
+	width:60%;
 }
 .details{
 	margin-top:2em;
@@ -85,13 +86,16 @@ address span{
 .glyphicon {
   top:1px;
 }
-.glyphicon-file:before,.glyphicon-print:before,.glyphicon-envelope:before,.glyphicon-picture:before,.glyphicon-music,.glyphicon-tasks{
+.glyphicon-file:before,.glyphicon-print:before,.glyphicon-user,.glyphicon-pencil,.glyphicon-envelope:before,.glyphicon-picture:before,.glyphicon-music,.glyphicon-tasks{
     margin-right: 9px;
   font-size: 14px;
-  color: #BCE3BE;
+  color: #fff;
 }
 .details_header{
-	padding: 0em 1em 0 2em;
+  padding: 1em 1em 0 2em;
+  position: fixed; 
+  background-color: #cdd6bcc0;
+  z-index: 999;
 }
 .details_header ul li{
 	display:inline-block;
@@ -343,7 +347,8 @@ address span {
 .sidebar_top{
 	width:30%;
 	float:left;
-	margin-right:5%;
+  margin-right:5%;
+  padding: 1em 0 0 0;
 }
 .details{
 	width:30%;
@@ -560,4 +565,9 @@ address span {
 .details a{
   text-decoration:underline;
   font-size: small;
+}
+
+.education_details img,.education_details video{
+  width: 50%;
+
 }
