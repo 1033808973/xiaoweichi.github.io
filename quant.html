@@ -65,12 +65,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step One:</b></h5>
           <br><b>◼ Reproduction and Exploration of Thesis</b>
           <br>&ensp;• 8-bit Quantization
+          <br><img src="images/quant/datastream.jpg"/>
           <br>&emsp; ➢ Referred to the paper's method and trained the ResNet network with ImageNet data set in the 8-bit data stream.
           <br>&emsp; ➢ Utilized direct Quantization, constant Quantization, shift Quantization and other quantitative methods to quantize the data from 32-bit to 8-bit based on WAGEUBN, and observed the impact of the data stream.
           <br>&ensp;• Deep Neural Network without Batch Normalization (BN)
           <br>&emsp; ➢ Applied Tensorflow to reproduce FixupNet and obtained the identical results as the original paper with ImageNet data set.
           <br><h5 style="padding: 1em 0 0 1; background-color: #D1EDC5;"><b>Step Two:</b></h5>
           <br><b>◼ Model Fusion based on 8-bit and without BN</b>
+          <br><img src="images/quant/forward.png"/>
+          <br><img src="images/quant/backward.png"/>
           <br>&ensp;• Migrated all the quantitative methods mentioned above to FixupNet and screened the current quantitative methods by control variable method.
           <br>&ensp;• Utilized quantization methods based on WAGEUBN to quantize the parameters in FixupNet, it is found that the accuracy of 8-bit DNN without BN has little influence.
           <br>&ensp;• Quantified the whole forward propagation and backward propagation to 8-bit respectively.
@@ -84,6 +87,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <br><b>◼ Result</b>
           <br>&ensp;• Compared with ResNet-34 and ResNet-50, the accuracy of 8bit-Fixup34 and 8bit-Fixup50 models is only 1.69% and 3.46% lower than the former.
           <br>&ensp;• For ResNet-110 network models with different batch (1, 2, 4, 8,128), the accuracy of the model with BN is 22.74%, 85.05%, 88.41%, 90.36% and 92.84%, respectively, while without BN is 89.41%, 92.74%, 93.11%, 93.13% and 92.98%.
+          <br><img src="images/quant/smallBatchResult.jpg"/>
+          
           <br><b>◼ Conclusions</b>
           <br>&ensp;• Batch Normalization can be replaced by appropriate initialization in the large DNN such as ResNet-110 and ResNet-101 to reduce the complex operations during the forward and backward propagation of BN. And provide a possibility to reduce the memory cost (training a DNN without large batch size).
           <br>&ensp;• The 8bit neural network training in the case of small batch size is realized, and the accuracy loss is almost 0. And the memory required for training is reduced by more than ten times.
